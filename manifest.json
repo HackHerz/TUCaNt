@@ -1,0 +1,19 @@
+{
+	"manifest_version": 2,
+	"name": "TUCaN't",
+	"version": "0.1.1",
+
+	"author": "Staniel",
+
+	"permissions": ["tabs", "http://*/*", "https://*/*" ],
+
+	"content_scripts": [
+		{
+			"matches": [ "http://www.tucan.tu-darmstadt.de/*", "https://www.tucan.tu-darmstadt.de/*" ],
+			"css": [ "sheet.css" ],
+			"all_frames": true
+		}
+	],
+
+	"web_accessible_resources": [ "TUCaNt.png" ]
+}
